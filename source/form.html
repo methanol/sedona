@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>SEDONA: Form Page</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <button class="main-nav__open text-hidden" type="button">Развернуть меню</button>
+          <button class="main-nav__close text-hidden vision-hidden" type="button">Свернуть меню</button>
+          <ul class="main-nav__list nav-group">
+            <li class="nav-group__item nav-group__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="nav-group__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="nav-group__item">
+              <a href="phorm.html">Форма отзыва</a>
+            </li>
+            <li class="nav-group__item">
+              <a href="https://up.htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/100-80.png" alt="SEDONA" width="100" height="80"></a>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="welcome-part">
+        <h1 class="welcome-part__head">Sedona</h1>
+      </section>
+      <form class="response-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="response-form__head">Оставьте свой отзыв</h2>
+        <p class="response-form__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="tell-me-name">
+          <h2 class="tell-me-name__head">Представьтесь:</h2>
+          <label for="name">Имя<sup>*</sup>:</label>
+          <input class="tell-me-name_f-name" type="text" id="name" name="f-name" required placeholder="Петр">
+          <label for="surname">Фамилия<sup>*</sup>:</label>
+          <input class="tell-me-name_s-name" type="text" id="surname" name="s-name" required placeholder="Иванов">
+          <label for="mid-name">Отчество:</label>
+          <input class="tell-me-name_m-name" type="text" id="mid-name" name="mid-name" placeholder="Александрович">
+        </div>
+        <div class="tell-me-phone">
+          <h2 class="tell-me-phone__head">Контактная информация:</h2>
+          <label for="phone">Контактный телефон<sup>*</sup>:</label>
+          <input class="tell-me-phone__number" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
+          <label for="mail">Электронна почта<sup>*</sup>:</label>
+          <input class="tell-me-phone__mail" type="email" id="mail" name="mail" required placeholder="Введите e-mail">
+        </div>
+        <div class="tell-me-feel">
+          <h2 class="tell-me-feel__head">Ваше общее впечатление:</h2>
+          <label for="good">Скорее положительное</label>
+          <input class="tell-me-feel__type good-feel" type="radio" id="good" name="feel" checked>
+          <label for="bad">Скорее отрицательное</label>
+          <input class="tell-me-feel__type bad-feel" type="radio" id="bad" name="feel">
+          <label for="neutral">Затрудняюсь ответить</label>
+          <input class="tell-me-feel__type none-feel" type="radio" id="neutral" name="feel">
+        </div>
+        <div class="tell-me-places">
+          <h2 class="tell-me-places__head">Посещенные достопримечательности:</h2>
+          <label for="bridge">Мост дьявола</label>
+          <input type="checkbox" class="tell-me-places__point" id="bridge" name="bridge" checked>
+          <label for="bell">Гора-Колокол</label>
+          <input type="checkbox" class="tell-me-places__point" id="bell" name="bell" checked>
+          <label for="park">Слайд-парк</label>
+          <input type="checkbox" class="tell-me-places__point" id="park" name="park" checked>
+          <label for="rock">Красные скалы</label>
+          <input type="checkbox" class="tell-me-places__point" id="rock" name="rock">
+        </div>
+        <div class="tell-me-emo">
+          <h2 class="tell-me-emo__head">Опишите свои эмоции:</h2>
+          <textarea name="emotion" id="emotion" class="tell-me-emo__tions" rows="8" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <button type="submit" class="response-form__send">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__hash">
+        #VISITSEDONA
+      </div>
+      <div class="page-footer__social social">
+        <div class="social__item twitter">
+          <a class="twitter__link text-hidden" href="https://www.twitter.com" target="_blank">twitter</a>
+        </div>
+        <div class="social__item facebook">
+          <a class="facebook__link text-hidden" href="https://www.facebook.com" target="_blank">facebook</a>
+        </div>
+        <div class="social__item youtube">
+          <a class="youtube__link text-hidden" href="https://www.youtube.com" target="_blank">youtube</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+    </footer>
+  </body>
+</html>
