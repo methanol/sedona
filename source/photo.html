@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>SEDONA: Form Page</title>
+    <title>SEDONA: Photo Page</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <button class="main-nav__open text-hidden" type="button">Развернуть меню</button>
-          <button class="main-nav__close text-hidden vision-hidden" type="button">Свернуть меню</button>
+          <button class="main-nav__toggle text-hidden" type="button">Развернуть меню</button>
+          <button class="main-nav__toggle--close text-hidden vision-hidden" type="button">Свернуть меню</button>
           <ul class="main-nav__list nav-group">
             <li class="nav-group__item nav-group__item--active">
               <a>Главная</a>
@@ -30,7 +30,7 @@
     </header>
     <main class="page-main">
       <section class="welcome-part">
-        <h1 class="welcome-part__head">Sedona</h1>
+        <img class="welcome-part__text--short" src="img/welcome.png" alt="Sedona">
       </section>
       <section class="description-part">
         <h2 class="description-part__head">Фото и видео</h2>
@@ -65,8 +65,12 @@
       <section class="video-part">
         <h2 class="video-part__head">Все еще сомневаетесь?</h2>
         <p class="video-part__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video-part__film" width="320" height="210" controls preload="auto"><source src="movie.mp4" type="mp4">
+        <video class="video-part__film" width="320" height="210" controls preload="auto" poster="img/poster.png"><source src="movie.mp4" type="mp4">
         </video>
+        <div class="video-part__control"></div>
+        <div class="video-part__repeat"></div>
+        <div class="video-part__cc"></div>
+        <div class="video-part__expand"></div>
       </section>
     </main>
     <footer class="page-footer">
@@ -74,13 +78,13 @@
         #VISITSEDONA
       </div>
       <div class="page-footer__social social">
-        <div class="social__item twitter">
+        <div class="social__item">
           <a class="twitter__link text-hidden" href="https://www.twitter.com" target="_blank">twitter</a>
         </div>
-        <div class="social__item facebook">
+        <div class="social__item--facebook">
           <a class="facebook__link text-hidden" href="https://www.facebook.com" target="_blank">facebook</a>
         </div>
-        <div class="social__item youtube">
+        <div class="social__item--youtube">
           <a class="youtube__link text-hidden" href="https://www.youtube.com" target="_blank">youtube</a>
         </div>
       </div>

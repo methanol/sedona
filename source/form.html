@@ -8,8 +8,8 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <button class="main-nav__open text-hidden" type="button">Развернуть меню</button>
-          <button class="main-nav__close text-hidden vision-hidden" type="button">Свернуть меню</button>
+          <button class="main-nav__toggle text-hidden" type="button">Развернуть меню</button>
+          <button class="main-nav__toggle--close text-hidden vision-hidden" type="button">Свернуть меню</button>
           <ul class="main-nav__list nav-group">
             <li class="nav-group__item nav-group__item--active">
               <a>Главная</a>
@@ -30,78 +30,68 @@
     </header>
     <main class="page-main">
       <section class="welcome-part">
-        <h1 class="welcome-part__head">Sedona</h1>
+        <img class="welcome-part__text-short" src="img/welcome.png" alt="Sedona">
       </section>
       <section class="description-part">
         <h2 class="description-part__head">Оставьте свой отзыв</h2>
         <p class="description-part__reasons">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="response-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="tell-me-name">
-          <h2 class="tell-me-name__head">Представьтесь:</h2>
+        <div class="response-form__section tell-me-name">
+          <h2 class="response-form__head">Представьтесь:</h2>
           <label for="name">Имя<sup>*</sup>:</label>
-          <input class="tell-me-name_f-name" type="text" id="name" name="f-name" required placeholder="Петр">
+          <input class="response-form__f-name" type="text" id="name" name="f-name" required placeholder="Петр">
           <label for="surname">Фамилия<sup>*</sup>:</label>
-          <input class="tell-me-name_s-name" type="text" id="surname" name="s-name" required placeholder="Иванов">
+          <input class="response-form__s-name" type="text" id="surname" name="s-name" required placeholder="Иванов">
           <label for="mid-name">Отчество:</label>
-          <input class="tell-me-name_m-name" type="text" id="mid-name" name="mid-name" placeholder="Александрович">
+          <input class="response-form__m-name" type="text" id="mid-name" name="mid-name" placeholder="Александрович">
         </div>
-        <div class="tell-me-phone">
-          <h2 class="tell-me-phone__head">Контактная информация:</h2>
+        <div class="response-form__section tell-me-phone">
+          <h2 class="response-form__head">Контактная информация:</h2>
           <label for="phone">Контактный телефон<sup>*</sup>:</label>
-          <input class="tell-me-phone__number" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
+          <input class="response-form__number" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
           <label for="mail">Электронна почта<sup>*</sup>:</label>
-          <input class="tell-me-phone__mail" type="email" id="mail" name="mail" required placeholder="Введите e-mail">
+          <input class="response-form__mail" type="email" id="mail" name="mail" required placeholder="Введите e-mail">
         </div>
-        <div class="tell-me-feel">
-          <h2 class="tell-me-feel__head">Ваше общее впечатление:</h2>
+        <div class="response-form__section tell-me-feel">
+          <h2 class="response-form__head">Ваше общее впечатление:</h2>
           <label for="good">Скорее положительное</label>
-          <input class="tell-me-feel__type good-feel" type="radio" id="good" name="feel" checked>
+          <input class="response-form__radio good-feel" type="radio" id="good" name="feel" checked>
           <label for="bad">Скорее отрицательное</label>
-          <input class="tell-me-feel__type bad-feel" type="radio" id="bad" name="feel">
+          <input class="response-form__radio bad-feel" type="radio" id="bad" name="feel">
           <label for="neutral">Затрудняюсь ответить</label>
-          <input class="tell-me-feel__type none-feel" type="radio" id="neutral" name="feel">
+          <input class="response-form__radio none-feel" type="radio" id="neutral" name="feel">
         </div>
-        <div class="tell-me-places">
-          <h2 class="tell-me-places__head">Посещенные достопримечательности:</h2>
+        <div class="response-form__section tell-me-places">
+          <h2 class="response-form__head">Посещенные достопримечательности:</h2>
           <label for="bridge">Мост дьявола</label>
-          <input type="checkbox" class="tell-me-places__point" id="bridge" name="bridge" checked>
+          <input type="checkbox" class="response-form__checkbox" id="bridge" name="bridge" checked>
           <label for="bell">Гора-Колокол</label>
-          <input type="checkbox" class="tell-me-places__point" id="bell" name="bell" checked>
+          <input type="checkbox" class="response-form__checkbox" id="bell" name="bell" checked>
           <label for="park">Слайд-парк</label>
-          <input type="checkbox" class="tell-me-places__point" id="park" name="park" checked>
+          <input type="checkbox" class="response-form__checkbox" id="park" name="park" checked>
           <label for="rock">Красные скалы</label>
-          <input type="checkbox" class="tell-me-places__point" id="rock" name="rock">
+          <input type="checkbox" class="response-form__checkbox" id="rock" name="rock">
         </div>
-        <div class="tell-me-emo">
-          <h2 class="tell-me-emo__head">Опишите свои эмоции:</h2>
-          <textarea name="emotion" id="emotion" class="tell-me-emo__tions" rows="8" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="response-form__section tell-me-emo">
+          <h2 class="response-form__head">Опишите свои эмоции:</h2>
+          <textarea name="emotion" id="emotion" class="response-form__textarea" rows="8" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <button type="submit" class="response-form__send button">Отправить отзыв</button>
       </form>
-      <div class="form-success">
-        <h2 class="form-success__head">Ваш отзыв отправлен!</h2>
-        <p class="form-success__form">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button type="button" class="form-success__btn button">ОК</button>
-      </div>
-      <div class="form-error">
-        <h2 class="form-error__head">Что-то пошло не так!</h2>
-        <p class="form-error__form">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-        <button type="button" class="form-error__btn button">ОК</button>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__hash">
         #VISITSEDONA
       </div>
       <div class="page-footer__social social">
-        <div class="social__item twitter">
+        <div class="social__item">
           <a class="twitter__link text-hidden" href="https://www.twitter.com" target="_blank">twitter</a>
         </div>
-        <div class="social__item facebook">
+        <div class="social__item--facebook">
           <a class="facebook__link text-hidden" href="https://www.facebook.com" target="_blank">facebook</a>
         </div>
-        <div class="social__item youtube">
+        <div class="social__item--youtube">
           <a class="youtube__link text-hidden" href="https://www.youtube.com" target="_blank">youtube</a>
         </div>
       </div>
@@ -110,5 +100,15 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
     </footer>
+    <div class="modal form-success">
+      <h2 class="modal__head">Ваш отзыв отправлен!</h2>
+      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button type="button" class="form-success__btn button">ОК</button>
+    </div>
+    <div class="modal form-error">
+      <h2 class="modal__head">Что-то пошло не так!</h2>
+      <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <button type="button" class="form-error__btn button">ОК</button>
+    </div>
   </body>
 </html>
