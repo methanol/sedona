@@ -1,0 +1,80 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.welcome-part {
+  min-height: 389px;
+  background: url(".././img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--short{
+    min-height: 158px;
+  }
+}
+
+.description-part,
+.reason-part,
+.description-part {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0 20px 0 20px;
+}
+
+.description-part__head {
+  font-size: 18px;
+}
+
+.description-part__reasons,
+.reason-part__order,
+.reason-part__details,
+.advantage-part__info,
+.hotel-part__info {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reason-part {
+  background-color: rgb(238, 238, 238);
+  &--plus-view {
+    background-color: #81b3d2;
+    color: white;
+  }
+  &--no-view {
+    border-bottom: 1px solid #678fa8;
+  }
+}
+
+.reasone__image {
+  transform: translateX(-20px);
+}
+
+.advantages-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  padding: 0 20px 0 70px;
+  position: relative;
+}
+
+.hotel-part {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0 20px 50px 20px;
+}
+
+.hotel-part__hotel-searcher {
+  align-self: stretch;
+  background-color: #81b3d2;
+  color: white;
+  line-height: 40px;
+}

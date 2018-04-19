@@ -1,0 +1,33 @@
+.main-nav {
+  background-color: rgb(129, 179, 210);
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(".././img/icon-cross.svg");
+  background-color: inherit;
+  right: 0;
+  top:0;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.nav-group__item {
+  text-align: center;
+  border-bottom:1px solid rgb(103, 143, 168);
+}

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA: Photo Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -24,12 +26,13 @@
             </li>
           </ul>
         </nav>
-        <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/100-80.png" alt="SEDONA" width="100" height="80"></a>
+        <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="100" height="80"></a>
+        </div>
       </div>
     </header>
     <main class="page-main">
-      <section class="welcome-part">
-        <img class="welcome-part__text--short" src="img/welcome.png" alt="Sedona">
+      <section class="welcome-part welcome-part--short">
+        <img class="welcome-part__text-short" src="img/text-sedona.svg" width="235" height="50" alt="Sedona">
       </section>
       <section class="description-part">
         <h2 class="description-part__head">Фото и видео</h2>
@@ -37,25 +40,25 @@
       </section>
       <section class="picture-wrap">
         <figure class="picture-part">
-          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/img1.png" alt="Неродные просторы" width="280" height="280"></a>
+          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280"></a>
           <figcaption class="picture-part__name">Неродные просторы</figcaption>
           <p class="picture-part__athor">Автор фото: Борис</p>
           <p class="picture-part__likes">1350</p>
         </figure>
         <figure class="picture-part">
-          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/img2.png" alt="Местная растительность" width="280" height="280"></a>
+          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280" height="280"></a>
           <figcaption class="picture-part__name">Местная растительность</figcaption>
           <p class="picture-part__athor">Автор фото: Сергей</p>
           <p class="picture-part__likes">143</p>
         </figure>
         <figure class="picture-part">
-          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/img3.png" alt="Дорога на север" width="280" height="280"></a>
+          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" width="280" height="280"></a>
           <figcaption class="picture-part__name">Дорога на север</figcaption>
           <p class="picture-part__athor">Автор фото: Петр</p>
           <p class="picture-part__likes">96</p>
         </figure>
         <figure class="picture-part">
-          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/img4.png" alt="Мост дьявола" width="280" height="280"></a>
+          <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280"></a>
           <figcaption class="picture-part__name">Мост дьявола</figcaption>
           <p class="picture-part__athor">Автор фото: Антон</p>
           <p class="picture-part__likes">254</p>
@@ -64,12 +67,13 @@
       <section class="video-part">
         <h2 class="video-part__head">Все еще сомневаетесь?</h2>
         <p class="video-part__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video-part__film" width="320" height="210" controls preload="auto" poster="img/poster.png"><source src="movie.mp4" type="mp4">
+        <video class="video-part__film" width="320" height="210" controls preload="auto" poster="img/video-mobile@1x.jpg"><source src="movie.mp4" type="mp4">
         </video>
-        <div class="video-part__control"></div>
-        <div class="video-part__repeat"></div>
-        <div class="video-part__cc"></div>
-        <div class="video-part__expand"></div>
+        <div class="video-part__control">
+          <img class="video-part__repeat" src="img/icon-video-replay.svg" width="25" height="25" alt="repeat">
+          <img class="video-part__cc" src="img/icon-video-subtitles.svg" width="40" height="25" alt="subtitle">
+          <img class="video-part__expand" src="img/icon-video-fullscreen.svg" width="25" height="25" alt="subtitle">
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -89,7 +93,7 @@
       </div>
       <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__img" src="img/logo-htmlacademy.svg" width="39" height="39" alt="html-academy"> </a>
         </div>
     </footer>
   </body>

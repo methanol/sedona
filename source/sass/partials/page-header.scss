@@ -1,0 +1,21 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  color: white;
+  line-height: 40px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 57px;
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 160px - 50px;
+  bottom: -35px;
+}

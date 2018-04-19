@@ -1,0 +1,70 @@
+.general-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+.general-form__section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.tell-me-feel,
+.tell-me-places {
+  font-weight: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.general-form__head {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.tell-me-name__key-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.general-form__name {
+  margin-left: 12px;
+  flex-grow: 2;
+}
+
+.general-form__send,
+.form-success__btn,
+.form-error__btn {
+  align-self: stretch;
+  background-color: #81b3d2;
+  color: white;
+  line-height: 40px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-success,
+.form-error {
+  width: 320px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid black;
+  padding: 0 20px 0 20px;
+}
+
+.modal__info {
+  font-weight: 400;
+}
