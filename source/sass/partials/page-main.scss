@@ -19,6 +19,7 @@
 
 .description-part,
 .reason-part {
+  @include global-wrap;
   @include flex-column;
 }
 
