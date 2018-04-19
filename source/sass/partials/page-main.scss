@@ -18,13 +18,8 @@
 }
 
 .description-part,
-.reason-part,
-.description-part {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-around;
-  padding: 0 20px 0 20px;
+.reason-part {
+  @include flex-column;
 }
 
 .description-part__head {
@@ -65,16 +60,6 @@
 }
 
 .hotel-part {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-around;
+  @include flex-column;
   padding: 0 20px 50px 20px;
-}
-
-.hotel-part__hotel-searcher {
-  align-self: stretch;
-  background-color: #81b3d2;
-  color: white;
-  line-height: 40px;
 }

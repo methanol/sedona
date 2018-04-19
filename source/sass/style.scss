@@ -1,8 +1,12 @@
 @import 'base/typography.scss';
 
+@import 'utils/mixins.scss';
+
 @import 'partials/page-header.scss';
 @import 'partials/navigation.scss';
 @import 'partials/page-main.scss';
 @import 'partials/page-footer.scss';
 @import 'partials/general-form.scss';
 @import 'partials/photo-list.scss';
+
+@import 'components/style-btn.scss';

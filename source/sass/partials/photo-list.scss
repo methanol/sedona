@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  outline: 2px solid red;
   padding: 0 20px 0 20px;
 }
 
@@ -32,4 +31,8 @@
   justify-content: space-around;
   min-height: 65px;
   background-color: rgb(242, 242, 242);
+}
+
+.video-part__repeat {
+  margin-right: 90px;
 }

@@ -1,8 +1,5 @@
 .page-footer {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column;
   width: 320px;
   margin: 0 auto;
   min-height: 243px;
@@ -25,7 +22,7 @@
   width: 46px;
   height: 48px;
   font-size: 0;
-  background-color: #81b3d2;
+  @include theme-color;
   position: relative;
   &--twitter,
   &--facebook {
@@ -34,34 +31,28 @@
   }
 }
 
-.twitter__link::before {
+.twitter__link::before,
+.facebook__link::before,
+..youtube__link::before {
   position: absolute;
   content: "";
   top: 22%;
   left: 22%;
   width: 25px;
   height: 25px;
-  color: white;
   background: url(".././img/icon-twitter.svg") no-repeat center;
 }
 
 .facebook__link::before {
-  position: absolute;
-  content: "";
-  top: 22%;
-  left: 22%;
-  width: 25px;
-  height: 25px;
   background: url(".././img/icon-facebook.svg") no-repeat center;
 }
+
 .youtube__link::before {
-  position: absolute;
-  content: "";
-  top: 22%;
-  left: 22%;
-  width: 25px;
-  height: 25px;
   background: url(".././img/icon-youtube.svg") no-repeat center;
+}
+
+.page-footer__copyright {
+  align-self: center;
 }
 
 .copyright {

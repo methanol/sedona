@@ -1,17 +1,18 @@
 .main-nav {
-  background-color: rgb(129, 179, 210);
+  @include theme-color;
   position: relative;
 }
 
 .main-nav__toggle {
   position: absolute;
   font-size: 0;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   background-image: url(".././img/icon-cross.svg");
   background-color: inherit;
-  right: 0;
-  top:0;
+  right: 10px;
+  top: 10px;
+  border: none;
 }
 
 .main-nav__list {
@@ -29,5 +30,5 @@
 
 .nav-group__item {
   text-align: center;
-  border-bottom:1px solid rgb(103, 143, 168);
+  border-bottom: 1px solid rgb(103, 143, 168);
 }

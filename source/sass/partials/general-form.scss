@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  @include global-wrap;
 }
 
 .general-form__section {
@@ -22,6 +22,11 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: capitalize;
+  text-align: left;
+}
+
+.general-form__radio-label {
+  margin-left: 70px;
 }
 
 .general-form__head {
@@ -41,30 +46,21 @@
   flex-grow: 2;
 }
 
-.general-form__send,
-.form-success__btn,
-.form-error__btn {
-  align-self: stretch;
-  background-color: #81b3d2;
-  color: white;
-  line-height: 40px;
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .form-success,
 .form-error {
   width: 320px;
   min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
   border: 1px solid black;
-  padding: 0 20px 0 20px;
+  @include global-wrap;
+  @include flex-column;
 }
 
 .modal__info {
   font-weight: 400;
+}
+
+.form-error__btn {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
