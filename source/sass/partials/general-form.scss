@@ -1,9 +1,9 @@
 .general-form {
+  @include global-wrap;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  @include global-wrap;
 }
 
 .general-form__section {
@@ -16,17 +16,13 @@
   line-height: 26px;
 }
 
-.tell-me-feel,
-.tell-me-places {
-  font-weight: 18px;
+.general-form__radio-label {
+  margin-left: 70px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: capitalize;
   text-align: left;
-}
-
-.general-form__radio-label {
-  margin-left: 70px;
 }
 
 .general-form__head {
@@ -44,15 +40,6 @@
 .general-form__name {
   margin-left: 12px;
   flex-grow: 2;
-}
-
-.form-success,
-.form-error {
-  width: 300px;
-  min-height: 320px;
-  border: 1px solid black;
-  @include global-wrap;
-  @include flex-column;
 }
 
 .modal__info {

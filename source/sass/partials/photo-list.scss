@@ -1,10 +1,10 @@
 .picture-wrap {
+  @include global-wrap;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  @include global-wrap;
 }
 
 .picture-part {
@@ -15,8 +15,7 @@
   justify-content: space-between;
 }
 
-.picture-part__author,
-.video-part__info {
+.picture-part__author {
   font-weight: 400;
   text-transform: none;
 }
@@ -27,10 +26,16 @@
 
 .video-wrap {
   @include global-wrap;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .video-part {
   @include flex-column;
+}
+
+.video-part__info {
+  font-weight: 400;
 }
 
 .video-part__control {

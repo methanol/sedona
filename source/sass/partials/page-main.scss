@@ -1,20 +1,5 @@
 .page-main {
-  width: 320px;
-  margin: 0 auto;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}
-
-.welcome-part {
-  min-height: 389px;
-  background: url(".././img/bg-back-mobile@1x.jpg") no-repeat center;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &--short{
-    min-height: 158px;
-  }
+  width: 100%;
 }
 
 .description-part,
@@ -38,10 +23,14 @@
 
 .reason-part {
   background-color: rgb(238, 238, 238);
+  font-size: 14px;
+  font-weight: 400;
+
   &--plus-view {
     background-color: #81b3d2;
     color: white;
   }
+
   &--no-view {
     border-bottom: 1px solid #678fa8;
   }

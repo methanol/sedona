@@ -12,3 +12,10 @@
 @mixin theme-color {
   background-color: rgb(129, 179, 210);
 }
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

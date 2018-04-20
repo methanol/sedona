@@ -1,0 +1,12 @@
+.welcome-part {
+  min-height: 389px;
+  background: url(".././img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--short {
+    min-height: 158px;
+  }
+}

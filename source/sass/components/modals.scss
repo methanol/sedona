@@ -1,0 +1,8 @@
+.form-success,
+.form-error {
+  @include global-wrap;
+  @include flex-column;
+  width: 300px;
+  min-height: 320px;
+  border: 1px solid black;
+}

@@ -1,0 +1,11 @@
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.nav-group__item {
+  text-align: center;
+  border-bottom: 1px solid rgb(103, 143, 168);
+}

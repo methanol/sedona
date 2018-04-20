@@ -1,6 +1,6 @@
 .button {
-  align-self: stretch;
   @include theme-color;
+  align-self: stretch;
   color: white;
   line-height: 40px;
   font-size: 21px;
