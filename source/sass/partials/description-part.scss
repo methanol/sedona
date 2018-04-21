@@ -1,0 +1,13 @@
+.description-part {
+  @include global-wrap;
+  @include flex-column;
+}
+
+.description-part__head {
+  font-size: 18px;
+}
+
+.description-part__reasons {
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,26 @@
+.reason-part {
+  @include global-wrap;
+  @include flex-column;
+  background-color: rgb(238, 238, 238);
+  font-size: 14px;
+  font-weight: 400;
+
+  &--plus-view {
+    background-color: #81b3d2;
+    color: white;
+  }
+
+  &--no-view {
+    border-bottom: 1px solid #678fa8;
+  }
+}
+
+.reason-part__order,
+.reason-part__details {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reasone__image {
+  transform: translateX(-20px);
+}
