@@ -1,9 +1,11 @@
 .page-footer {
-  @include flex-column;
   width: 100%;
+}
+
+.page-footer__wrap {
+  @include flex-column;
   margin: 0 auto;
   min-height: 243px;
-  border-bottom: 1px solid black;
 }
 
 .page-footer__hash {

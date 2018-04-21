@@ -1,6 +1,12 @@
 .description-part {
+  width: 100%;
+}
+
+.description-part__wrap {
   @include global-wrap;
   @include flex-column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .description-part__head {

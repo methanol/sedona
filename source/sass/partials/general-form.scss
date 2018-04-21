@@ -1,9 +1,16 @@
 .general-form {
+  width: 100%;
+}
+
+.general-form__wrap {
   @include global-wrap;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .general-form__section {
@@ -42,12 +49,6 @@
   flex-grow: 2;
 }
 
-.modal__info {
-  font-weight: 400;
-}
-
-.form-error__btn {
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
+.general-form__send {
+  margin-top: 50px;
 }

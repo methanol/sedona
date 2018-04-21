@@ -1,9 +1,5 @@
 .reason-part {
-  @include global-wrap;
-  @include flex-column;
   background-color: rgb(238, 238, 238);
-  font-size: 14px;
-  font-weight: 400;
 
   &--plus-view {
     background-color: #81b3d2;
@@ -15,12 +11,21 @@
   }
 }
 
+.reason-part__wrap {
+  @include global-wrap;
+  @include flex-column;
+  font-size: 14px;
+  font-weight: 400;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .reason-part__order,
 .reason-part__details {
   font-size: 14px;
   font-weight: 400;
 }
 
-.reasone__image {
+.reason__image {
   transform: translateX(-20px);
 }
