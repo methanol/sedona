@@ -1,0 +1,9 @@
+.button {
+  @include theme-color;
+  align-self: stretch;
+  color: white;
+  line-height: 40px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

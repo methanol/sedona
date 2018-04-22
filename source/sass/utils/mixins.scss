@@ -1,0 +1,14 @@
+@mixin global-wrap {
+  padding: 0 20px 0 20px;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@mixin theme-color {
+  background-color: rgb(129, 179, 210);
+}

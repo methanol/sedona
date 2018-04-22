@@ -1,0 +1,23 @@
+.hotel-part {
+  width: 100%;
+}
+
+.hotel-part__wrap {
+  @include flex-column;
+  padding: 0 20px 0 20px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.hotel-part__info {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hotel-part__hotel-searcher {
+  margin-bottom: 50px;
+}
+
+.hotel-part__map {
+  transform: translateX(-20px);
+}

@@ -1,0 +1,22 @@
+.page-header {
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgb(129, 179, 210) 75%, white 75%);
+}
+
+.page-header__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 57px;
+  color: white;
+  line-height: 40px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 35%;
+  top: 164px;
+  z-index: 10;
+}
