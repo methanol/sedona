@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social__item {
+  @include theme-color;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  position: relative;
+
+  &--twitter,
+  &--facebook {
+    margin-right: 7px;
+    color: white;
+  }
+}
+
+.social__link--twitter::before,
+.social__link--facebook::before,
+.social__link--youtube::before {
+  position: absolute;
+  content: "";
+  top: 22%;
+  left: 22%;
+  width: 25px;
+  height: 25px;
+  background: url(".././img/icon-twitter.svg") no-repeat center;
+}
+
+.social__link--facebook::before {
+  background: url(".././img/icon-facebook.svg") no-repeat center;
+}
+
+.social__link--youtube::before {
+  background: url(".././img/icon-youtube.svg") no-repeat center;
+}

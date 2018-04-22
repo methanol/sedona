@@ -1,0 +1,19 @@
+.description-part {
+  width: 100%;
+}
+
+.description-part__wrap {
+  @include global-wrap;
+  @include flex-column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.description-part__head {
+  font-size: 18px;
+}
+
+.description-part__reasons {
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,54 @@
+.general-form {
+  width: 100%;
+}
+
+.general-form__wrap {
+  @include global-wrap;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.general-form__section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.general-form__radio-label {
+  margin-left: 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.general-form__head {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.tell-me-name__key-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.general-form__name {
+  margin-left: 12px;
+  flex-grow: 2;
+}
+
+.general-form__send {
+  margin-top: 50px;
+}

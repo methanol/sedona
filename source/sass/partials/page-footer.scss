@@ -1,0 +1,17 @@
+.page-footer {
+  width: 100%;
+}
+
+.page-footer__wrap {
+  @include flex-column;
+  margin: 0 auto;
+  min-height: 243px;
+}
+
+.page-footer__hash {
+  font-size: 21px;
+}
+
+.page-footer__copyright {
+  align-self: center;
+}

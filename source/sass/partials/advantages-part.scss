@@ -1,0 +1,20 @@
+.advantages-part {
+  background: white;
+}
+
+.advantages-part__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 20px 0 70px;
+  position: relative;
+  width: 230px;
+  margin: 0 auto;
+}
+
+.advantage-part__info {
+  font-size: 14px;
+  font-weight: 400;
+}
