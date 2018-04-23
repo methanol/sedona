@@ -15,3 +15,12 @@
 .page-footer__copyright {
   align-self: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrap {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 122px;
+  }
+}

@@ -18,3 +18,32 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages-part__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .advantage-part {
+    width: 33%;
+    padding: 90px 78px 0 78px;
+  }
+
+  &--home {
+    order: 1;
+  }
+
+  &--cards {
+    order: 3;
+  }
+
+  &--food {
+    order: 2;
+  }
+}

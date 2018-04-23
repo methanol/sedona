@@ -6,6 +6,7 @@
 .page-header__wrap {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-bottom: 57px;
   color: white;
   line-height: 40px;
@@ -19,4 +20,27 @@
   left: 35%;
   top: 164px;
   z-index: 10;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-image: none;
+    background-color: white;
+  }
+
+  .page-header__wrap {
+    color: black;
+    position: relative;
+    width: 100%;
+    height: 56px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 45%;
+    top: 0;
+    z-index: 10;
+  }
 }
