@@ -19,8 +19,15 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrap {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
     min-height: 122px;
+  }
+
+  .page-footer__social,
+  .page-footer__hash,
+  .page-footer__copyright {
+    flex-grow: 1;
   }
 }

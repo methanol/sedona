@@ -6,10 +6,24 @@ body {
   font-size: 18px;
   line-height: 26px;
   background: white;
-  min-width: 320px;
+  min-width: $mobile-width;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
 }
