@@ -11,13 +11,15 @@
   color: white;
   line-height: 40px;
   position: relative;
-  width: 320px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
 .page-header__logo {
   position: absolute;
-  left: 35%;
+  left: 50%;
+  margin-left: -50px;
   top: 164px;
   z-index: 10;
 }
@@ -39,8 +41,16 @@
 
   .page-header__logo {
     position: absolute;
-    left: 45%;
+    left: 50%;
+    margin-left: -50px;
     top: 0;
     z-index: 10;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

@@ -19,6 +19,15 @@
   margin-bottom: 50px;
 }
 
+.hotel-part__map {
+  width: 100%;
+  background-image: url(.././img/bg-map-mobile@1x.jpg);
+}
+
+.hotel-part__map iframe {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .hotel-part__wrap {
     padding: 0;
