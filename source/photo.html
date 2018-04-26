@@ -6,111 +6,113 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="container page-header__wrap">
-        <nav class="main-nav">
-          <button class="main-nav__toggle text-hidden" type="button">Развернуть меню</button>
-          <ul class="main-nav__list nav-group">
-            <li class="nav-group__item nav-group__item--active">
-              <a href="index.html">Главная</a>
+    <div class="page-wrap">
+      <header class="page-header">
+        <div class="container page-header__wrap">
+          <nav class="main-nav">
+            <button class="main-nav__toggle text-hidden" type="button">Развернуть меню</button>
+            <ul class="main-nav__list nav-group">
+              <li class="nav-group__item nav-group__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="nav-group__item nav-group__item--right">
+                <a>Фото и видео</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="form.html">Форма отзыва</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="https://up.htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="100" height="80"></a>
+        </div>
+      </header>
+      <main class="page-main">
+          <section class="welcome-part">
+            <div class="welcome-part__wrap welcome-part__wrap--short">
+              <img class="welcome-part__text-short" src="img/text-sedona.svg" width="235" height="50" alt="Sedona">
+            </div>
+          </section>
+          <section class="description-part">
+            <div class="description-part__wrap">
+              <h2 class="description-part__head">Фото и видео</h2>
+              <p class="description-part__reasons">Не можете рещиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            </div>
+          </section>
+          <section class="picture-parts">
+            <div class="picture-parts__wrap">
+              <figure class="picture-part picture-part--huge">
+                <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280"></a>
+                <div class="picture-part__box">
+                  <figcaption class="picture-part__name">Неродные просторы</figcaption>
+                  <p class="picture-part__author">Автор фото: Борис</p>
+                  <p class="picture-part__likes">1350</p>
+                </div>
+              </figure>
+              <figure class="picture-part">
+                <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280" height="280"></a>
+                <div class="picture-part__box">
+                  <figcaption class="picture-part__name">Местная растительность</figcaption>
+                  <p class="picture-part__author">Автор фото: Сергей</p>
+                  <p class="picture-part__likes">143</p>
+                </div>
+              </figure>
+              <figure class="picture-part">
+                <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" width="280" height="280"></a>
+                <div class="picture-part__box">
+                  <figcaption class="picture-part__name">Дорога на север</figcaption>
+                  <p class="picture-part__author">Автор фото: Петр</p>
+                  <p class="picture-part__likes">96</p>
+                </div>
+              </figure>
+              <figure class="picture-part">
+                <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280"></a>
+                <div class="picture-part__box">
+                  <figcaption class="picture-part__name">Мост дьявола</figcaption>
+                  <p class="picture-part__author">Автор фото: Антон</p>
+                  <p class="picture-part__likes">254</p>
+                </div>
+              </figure>
+            </div>
+          </section>
+          <section class="video-part">
+            <div class="video-wrap">
+              <h2 class="video-part__head">Все еще сомневаетесь?</h2>
+              <p class="video-part__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <video class="video-part__film" controls preload="auto" poster="img/video-mobile@1x.jpg"><source src="movie.mp4" type="mp4">
+              </video>
+              <div class="video-part__control">
+                <img class="video-part__repeat" src="img/icon-video-replay.svg" width="25" height="25" alt="repeat">
+                <img class="video-part__cc" src="img/icon-video-subtitles.svg" width="40" height="25" alt="subtitle">
+                <img class="video-part__expand" src="img/icon-video-fullscreen.svg" width="25" height="25" alt="subtitle">
+              </div>
+            </div>
+          </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrap">
+          <div class="page-footer__hash">
+            #VISITSEDONA
+          </div>
+          <ul class="page-footer__social social">
+            <li class="social__item social__item--twitter">
+              <a class="social__link social__link--twitter text-hidden" href="https://www.twitter.com" target="_blank">twitter</a>
             </li>
-            <li class="nav-group__item nav-group__item--right">
-              <a>Фото и видео</a>
+            <li class="social__item social__item--facebook">
+              <a class="social__link social__link--facebook text-hidden" href="https://www.facebook.com" target="_blank">facebook</a>
             </li>
-            <li class="nav-group__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="nav-group__item">
-              <a href="https://up.htmlacademy.ru">HTML Academy</a>
+            <li class="social__item social__item--youtube">
+              <a class="social__link social__link--youtube text-hidden" href="https://www.youtube.com" target="_blank">youtube</a>
             </li>
           </ul>
-        </nav>
-        <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="100" height="80"></a>
-      </div>
-    </header>
-    <main class="page-main">
-        <section class="welcome-part">
-          <div class="welcome-part__wrap welcome-part__wrap--short">
-            <img class="welcome-part__text-short" src="img/text-sedona.svg" width="235" height="50" alt="Sedona">
-          </div>
-        </section>
-        <section class="description-part">
-          <div class="description-part__wrap">
-            <h2 class="description-part__head">Фото и видео</h2>
-            <p class="description-part__reasons">Не можете рещиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </div>
-        </section>
-        <section class="picture-parts">
-          <div class="picture-parts__wrap">
-            <figure class="picture-part picture-part--huge">
-              <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280"></a>
-              <div class="picture-part__box">
-                <figcaption class="picture-part__name">Неродные просторы</figcaption>
-                <p class="picture-part__author">Автор фото: Борис</p>
-                <p class="picture-part__likes">1350</p>
-              </div>
-            </figure>
-            <figure class="picture-part">
-              <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280" height="280"></a>
-              <div class="picture-part__box">
-                <figcaption class="picture-part__name">Местная растительность</figcaption>
-                <p class="picture-part__author">Автор фото: Сергей</p>
-                <p class="picture-part__likes">143</p>
-              </div>
-            </figure>
-            <figure class="picture-part">
-              <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" width="280" height="280"></a>
-              <div class="picture-part__box">
-                <figcaption class="picture-part__name">Дорога на север</figcaption>
-                <p class="picture-part__author">Автор фото: Петр</p>
-                <p class="picture-part__likes">96</p>
-              </div>
-            </figure>
-            <figure class="picture-part">
-              <a class="picture-part__link" href="#"><img class="picture-part__view" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280"></a>
-              <div class="picture-part__box">
-                <figcaption class="picture-part__name">Мост дьявола</figcaption>
-                <p class="picture-part__author">Автор фото: Антон</p>
-                <p class="picture-part__likes">254</p>
-              </div>
-            </figure>
-          </div>
-        </section>
-        <section class="video-part">
-          <div class="video-wrap">
-            <h2 class="video-part__head">Все еще сомневаетесь?</h2>
-            <p class="video-part__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <video class="video-part__film" width="320" height="210" controls preload="auto" poster="img/video-mobile@1x.jpg"><source src="movie.mp4" type="mp4">
-            </video>
-            <div class="video-part__control">
-              <img class="video-part__repeat" src="img/icon-video-replay.svg" width="25" height="25" alt="repeat">
-              <img class="video-part__cc" src="img/icon-video-subtitles.svg" width="40" height="25" alt="subtitle">
-              <img class="video-part__expand" src="img/icon-video-fullscreen.svg" width="25" height="25" alt="subtitle">
-            </div>
-          </div>
-        </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrap">
-        <div class="page-footer__hash">
-          #VISITSEDONA
-        </div>
-        <div class="page-footer__social social">
-          <div class="social__item social__item--twitter">
-            <a class="social__link social__link--twitter text-hidden" href="https://www.twitter.com" target="_blank">twitter</a>
-          </div>
-          <div class="social__item social__item--facebook">
-            <a class="social__link social__link--facebook text-hidden" href="https://www.facebook.com" target="_blank">facebook</a>
-          </div>
-          <div class="social__item social__item--youtube">
-            <a class="social__link social__link--youtube text-hidden" href="https://www.youtube.com" target="_blank">youtube</a>
+          <div class="page-footer__copyright copyright">
+              <b class="copyright__text">Разработано</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__img" src="img/logo-htmlacademy.svg" width="39" height="39" alt="html-academy"> </a>
           </div>
         </div>
-        <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__img" src="img/logo-htmlacademy.svg" width="39" height="39" alt="html-academy"> </a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

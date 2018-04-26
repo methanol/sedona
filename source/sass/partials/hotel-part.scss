@@ -26,6 +26,8 @@
 
 .hotel-part__map iframe {
   width: 100%;
+  display: block;
+  border: 0;
 }
 
 @media (min-width: $tablet-width) {
