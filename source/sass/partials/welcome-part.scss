@@ -15,3 +15,8 @@
     min-height: 158px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  width: 100%;
+  min-height: 520px;
+}

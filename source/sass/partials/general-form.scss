@@ -46,9 +46,125 @@
 
 .general-form__name {
   margin-left: 12px;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .general-form__send {
   margin-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .general-form__wrap {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    padding: 0 10px 0 10px;
+    max-width: 648px;
+    box-sizing: border-box;
+  }
+
+  .tell-me-feel {
+    order: -10;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tell-me-name {
+    order: -9;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tell-me-name__key-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .general-form__name {
+    margin-left: 12px;
+    flex-grow: 1;
+  }
+
+  .tell-me-phone {
+    order: -8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .general-form__number {
+    align-self: stretch;
+  }
+
+  .general-form__head {
+    align-self: center;
+    width: 100%;
+  }
+
+  .tell-me-places {
+    order: -7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .general-form__radio-label {
+    width: 250px;
+  }
+
+  .tell-me-emo {
+    order: -6;
+    width: 100%;
+  }
+
+  .general-form__send {
+    width: 324px;
+
+    &::after {
+      content: "* - Обязательные поля";
+      position: absolute;
+      font-size: 14px;
+      bottom: 0;
+      right: 0;
+      width: 185px;
+      height: 30px;
+      color: black;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .general-form__wrap {
+    max-width: 960px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+  }
+
+  .tell-me-phone {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .general-form__number {
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .general-form__radio-label {
+    width: 140px;
+  }
 }
