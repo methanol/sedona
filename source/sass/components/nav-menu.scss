@@ -9,3 +9,26 @@
   text-align: center;
   border-bottom: 1px solid rgb(103, 143, 168);
 }
+
+@media (min-width: $tablet-width) {
+  .nav-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 56px;
+  }
+
+  .nav-group__item {
+    text-align: center;
+    border-bottom: none;
+    flex-basis: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--right {
+      margin-right: auto;
+    }
+  }
+}

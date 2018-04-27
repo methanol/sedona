@@ -1,4 +1,5 @@
 @import "utils/mixins.scss";
+@import "utils/const.scss";
 @import "base/global.scss";
 @import "base/typography.scss";
 @import "partials/page-header.scss";
@@ -7,6 +8,7 @@
 @import "partials/page-footer.scss";
 @import "partials/general-form.scss";
 @import "partials/photo-list.scss";
+@import "partials/video-list.scss";
 @import "partials/social-part.scss";
 @import "partials/welcome-part.scss";
 @import "partials/description-part.scss";

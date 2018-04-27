@@ -17,3 +17,9 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .description-part__wrap {
+    width: 520px;
+  }
+}
