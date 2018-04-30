@@ -10,10 +10,39 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
+  position: relative;
 
   &--short {
     min-height: 158px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    right: 160px;
+    bottom: -17px;
+    transform: rotate(266deg) scaleY(11.4) skewY(0.3deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    left: 160px;
+    bottom: -17px;
+    transform: rotate(94deg) scaleY(11.4) skewY(-0.5deg);
+  }
+}
+
+.welcome-part__text {
+  margin-bottom: -5px;
+}
+
+.welcome-part__text-short {
+  margin-top: -15px;
 }
 
 @media (min-width: $tablet-width) {

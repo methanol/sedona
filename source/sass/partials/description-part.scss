@@ -5,17 +5,64 @@
 .description-part__wrap {
   @include global-wrap;
   @include flex-column;
-  width: 280px;
+  align-items: center;
+  width: 320px;
   margin: 0 auto;
+  margin-bottom: 31px;
+  position: relative;
+
+  &--main::before {
+    position: absolute;
+    content: "";
+    border: 15px solid transparent;
+    border-bottom-color: rgb(129, 179, 210);
+    right: 205px;
+    bottom: -53px;
+    transform: rotate(267deg) scaleY(14.3) skewY(0.3deg);
+  }
+
+  &--main::after {
+    position: absolute;
+    content: "";
+    border: 15px solid transparent;
+    border-bottom-color: rgb(129, 179, 210);
+    left: 205px;
+    bottom: -53px;
+    transform: rotate(93deg) scaleY(14.3) skewY(-0.2deg);
+  }
+
+  &--photo {
+    margin: 0 auto;
+  }
+
+  &--form {
+    margin-bottom: 3px;
+  }
 }
 
 .description-part__head {
   font-size: 18px;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  letter-spacing: 0.2px;
+
+  &--form {
+    margin-top: 37px;
+  }
 }
 
 .description-part__reasons {
   font-size: 14px;
   font-weight: 400;
+  width: 285px;
+  margin-top: 27px;
+  letter-spacing: 0.2px;
+
+  &--form {
+    line-height: 24px;
+  }
 }
 
 @media (min-width: $tablet-width) {

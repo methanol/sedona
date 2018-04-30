@@ -6,7 +6,11 @@
 }
 
 .nav-group__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
+  min-height: 55px;
   border-bottom: 1px solid rgb(103, 143, 168);
 }
 

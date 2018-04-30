@@ -5,18 +5,74 @@
 .advantages-part__wrap {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   text-align: left;
   font-size: 14px;
-  padding: 0 20px 0 70px;
+  padding: 35px 20px 10px 70px;
   position: relative;
   width: 230px;
   margin: 0 auto;
 }
 
+.advantage-part {
+  padding-bottom: 12px;
+  position: relative;
+
+  &--home {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -50px;
+      width: 40px;
+      height: 38px;
+      background-image: url("./../img/icon-house.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--cards {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -50px;
+      width: 40px;
+      height: 38px;
+      background-image: url("./../img/icon-gift.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--food {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: -52px;
+      width: 40px;
+      height: 38px;
+      background-image: url("./../img/icon-burger.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.advantage-part__head {
+  font-size: 18px;
+  letter-spacing: 0.2;
+}
+
 .advantage-part__info {
   font-size: 14px;
   font-weight: 400;
+  line-height: 22px;
 }
 
 @media (min-width: $tablet-width) {

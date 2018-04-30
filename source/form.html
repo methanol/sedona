@@ -36,9 +36,9 @@
             </div>
           </section>
           <section class="description-part">
-            <div class="description-part__wrap">
-              <h2 class="description-part__head">Оставьте свой отзыв</h2>
-              <p class="description-part__reasons">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <div class="description-part__wrap description-part__wrap--form">
+              <h2 class="description-part__head description-part__head--form">Оставьте свой отзыв</h2>
+              <p class="description-part__reasons description-part__reasons--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </div>
           </section>
           <form class="general-form response-form" action="https://echo.htmlacademy.ru" method="post">
@@ -60,34 +60,34 @@
               </div>
               <div class="general-form__section tell-me-phone">
                 <h2 class="general-form__head">Контактная информация:</h2>
-                <label for="phone">Контактный телефон<sup>*</sup>:</label>
+                <label for="phone" class="tell-me-phone__labe">Контактный телефон<sup>*</sup>:</label>
                 <input class="general-form__number" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
-                <label for="mail">Электронная почта<sup>*</sup>:</label>
+                <label for="mail" class="tell-me-phone__labe">Электронная почта<sup>*</sup>:</label>
                 <input class="general-form__number general-form__number--mail" type="email" id="mail" name="mail" required placeholder="Введите e-mail">
               </div>
               <div class="general-form__section tell-me-feel">
                 <h2 class="general-form__head">Ваше общее впечатление:</h2>
-                <label class="general-form__radio-label" for="good">Скорее положительное</label>
                 <input class="general-form__radio good-feel" type="radio" id="good" name="feel" checked>
-                <label class="general-form__radio-label" for="bad">Скорее отрицательное</label>
+                <label class="general-form__radio-label" for="good">Скорее положительное</label>
                 <input class="general-form__radio bad-feel" type="radio" id="bad" name="feel">
-                <label class="general-form__radio-label" for="neutral">Затрудняюсь ответить</label>
+                <label class="general-form__radio-label" for="bad">Скорее отрицательное</label>
                 <input class="general-form__radio none-feel" type="radio" id="neutral" name="feel">
+                <label class="general-form__radio-label" for="neutral">Затрудняюсь ответить</label>
               </div>
               <div class="general-form__section tell-me-places">
                 <h2 class="general-form__head">Посещенные достопримечательности:</h2>
-                <label class="general-form__radio-label" for="bridge">Мост дьявола</label>
                 <input type="checkbox" class="general-form__checkbox" id="bridge" name="bridge" checked>
-                <label class="general-form__radio-label" for="bell">Гора-Колокол</label>
+                <label class="general-form__check-label" for="bridge">Мост Дьявола</label>
                 <input type="checkbox" class="general-form__checkbox" id="bell" name="bell" checked>
-                <label class="general-form__radio-label" for="park">Слайд-парк</label>
+                <label class="general-form__check-label" for="bell">Гора-Колокол</label>
                 <input type="checkbox" class="general-form__checkbox" id="park" name="park" checked>
-                <label class="general-form__radio-label" for="rock">Красные скалы</label>
+                <label class="general-form__check-label" for="park">Слайд-парк</label>
                 <input type="checkbox" class="general-form__checkbox" id="rock" name="rock">
+                <label class="general-form__check-label" for="rock">Красные скалы</label>
               </div>
               <div class="general-form__section tell-me-emo">
                 <h2 class="general-form__head">Опишите свои эмоции:</h2>
-                <textarea name="emotion" id="emotion" class="general-form__textarea" rows="8" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea name="emotion" id="emotion" class="general-form__textarea" rows="4" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
               <button type="submit" class="general-form__send button">Отправить отзыв</button>
             </div>

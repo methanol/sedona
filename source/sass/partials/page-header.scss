@@ -1,16 +1,16 @@
 .page-header {
   width: 100%;
-  background-image: linear-gradient(to bottom, rgb(129, 179, 210) 75%, white 75%);
+  background-image: linear-gradient(to bottom, rgb(129, 179, 210) 80%, white 80%);
+  line-height: 40px;
+  position: relative;
 }
 
 .page-header__wrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 57px;
+  padding-bottom: 55px;
   color: white;
-  line-height: 40px;
-  position: relative;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -20,7 +20,7 @@
   position: absolute;
   left: 50%;
   margin-left: -50px;
-  top: 164px;
+  top: 80%;
   z-index: 10;
 }
 
