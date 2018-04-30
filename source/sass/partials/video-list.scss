@@ -61,19 +61,34 @@
     max-width: 648px;
     margin: 0 auto;
     align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .video-part__head {
+    font-size: 30px;
+    letter-spacing: 0.4px;
   }
 
   .video-part__info {
     width: 430px;
+    padding-bottom: 0;
   }
 
   .video-part__film {
     transform: none;
     width: 100%;
+    min-height: 500px;
   }
 
   .video-part__control {
     width: 100%;
+    position: absolute;
+    min-height: 93px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .video-part__repeat {

@@ -187,9 +187,21 @@
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    padding: 0 10px 0 10px;
+    padding: 0;
     max-width: 648px;
     box-sizing: border-box;
+  }
+
+  .general-form__section {
+    border-top: none;
+  }
+
+  .general-form__head {
+    font-size: 20px;
+    padding: 0;
+    letter-spacing: 0.5px;
+    margin-top: 57px;
+    margin-bottom: 58px;
   }
 
   .tell-me-feel {
@@ -198,6 +210,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
   }
 
   .tell-me-name {
@@ -206,11 +220,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
+    padding-left: 55px;
+    box-sizing: border-box;
+    justify-content: flex-start;
   }
 
   .tell-me-name__key-field {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     width: 100%;
   }
@@ -227,15 +245,16 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
+    margin-top: -25px;
+  }
+
+  .general-form__head--phone {
+    margin-bottom: 22px;
   }
 
   .general-form__number {
     align-self: stretch;
-  }
-
-  .general-form__head {
-    align-self: center;
-    width: 100%;
+    margin-bottom: 20px;
   }
 
   .tell-me-places {
@@ -244,16 +263,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -45px;
   }
 
-  .general-form__radio-label,
+  .general-form__head--places {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    flex-grow: 1;
+  }
+
+  .general-form__radio-label {
+    padding-bottom: 20px;
+    width: 260px;
+  }
+
   .general-form__check-label {
-    width: 250px;
+    padding-bottom: 30px;
+    width: 220px;
   }
 
   .tell-me-emo {
     order: -6;
     width: 100%;
+    margin-top: -25px;
+    margin-bottom: 10px;
   }
 
   .general-form__send {
@@ -263,7 +298,7 @@
       content: "* - Обязательные поля";
       position: absolute;
       font-size: 14px;
-      bottom: 0;
+      bottom: 60px;
       right: 0;
       width: 185px;
       height: 30px;
@@ -276,7 +311,6 @@
 @media (min-width: $desktop-width) {
   .general-form__wrap {
     max-width: 960px;
-    padding: 0 10px 0 10px;
     box-sizing: border-box;
   }
 
@@ -291,7 +325,6 @@
     margin-right: 15px;
   }
 
-  .general-form__radio-label,
   .general-form__check-label {
     width: 140px;
   }

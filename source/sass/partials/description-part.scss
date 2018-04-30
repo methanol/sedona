@@ -67,6 +67,57 @@
 
 @media (min-width: $tablet-width) {
   .description-part__wrap {
+    &--main::before {
+      display: none;
+    }
+
+    &--main::after {
+      display: none;
+    }
+
+    &--photo {
+      padding-top: 25px;
+    }
+  }
+
+  .description-part__head {
+    width: 460px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin-top: 50px;
+
+    &--photo {
+      font-size: 30px;
+      letter-spacing: 0.4px;
+    }
+
+    &--form {
+      font-size: 30px;
+      letter-spacing: 0.4px;
+      margin-top: 75px;
+    }
+  }
+
+  .description-part__reasons {
     width: 520px;
+    margin-top: 29px;
+    letter-spacing: 0.1px;
+
+    &--photo {
+      width: 450px;
+      margin-bottom: 68px;
+    }
+
+    &--form {
+      width: 450px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-part__wrap {
+    &--photo {
+      padding-top: 70px;
+    }
   }
 }

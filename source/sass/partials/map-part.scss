@@ -1,6 +1,7 @@
 .map-part {
   width: 100%;
   background-image: url(".././img/bg-map-mobile@1x.jpg");
+  box-sizing: border-box;
 }
 
 .map-part iframe {

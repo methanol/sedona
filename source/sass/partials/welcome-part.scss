@@ -46,6 +46,39 @@
 }
 
 @media (min-width: $tablet-width) {
-  width: 100%;
-  min-height: 520px;
+  .welcome-part {
+    background: url(".././img/bg-back-mobile@1x.jpg") no-repeat;
+    background-color: lightblue;
+    background-size: cover;
+  }
+
+  .welcome-part__wrap {
+    width: 100%;
+    min-height: 518px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border: 35px solid transparent;
+      border-bottom-color: white;
+      right: 52%;
+      bottom: -40px;
+      transform: rotate(266deg) scaleY(11.4) skewY(0.4deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      border: 35px solid transparent;
+      border-bottom-color: white;
+      left: 52%;
+      bottom: -40px;
+      transform: rotate(94deg) scaleY(11.4) skewY(-0.4deg);
+    }
+
+    &--short {
+      min-height: 290px;
+    }
+  }
 }

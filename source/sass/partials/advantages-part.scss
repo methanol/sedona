@@ -66,7 +66,7 @@
 
 .advantage-part__head {
   font-size: 18px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
 }
 
 .advantage-part__info {
@@ -84,22 +84,76 @@
     padding: 0;
     position: relative;
     width: 100%;
+    min-height: 330px;
+    box-sizing: border-box;
   }
 
   .advantage-part {
     width: 33.333333%;
-    padding: 90px 78px 0 78px;
+    padding: 160px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--home {
+      order: 1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 18%;
+        left: 35%;
+        width: 75px;
+        height: 75px;
+        background-image: url("./../img/icon-house.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--cards {
+      order: 3;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 18%;
+        left: 35%;
+        width: 75px;
+        height: 75px;
+        background-image: url("./../img/icon-gift.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--food {
+      order: 2;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 18%;
+        left: 35%;
+        width: 75px;
+        height: 75px;
+        background-image: url("./../img/icon-burger.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
   }
 
-  &--home {
-    order: 1;
+  .advantage-part__head {
+    font-size: 20px;
+    letter-spacing: 0.8px;
   }
 
-  &--cards {
-    order: 3;
-  }
-
-  &--food {
-    order: 2;
+  .advantage-part__info {
+    width: 165px;
+    padding-top: 5px;
   }
 }

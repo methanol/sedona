@@ -59,7 +59,7 @@
                 </div>
               </div>
               <div class="general-form__section tell-me-phone">
-                <h2 class="general-form__head">Контактная информация:</h2>
+                <h2 class="general-form__head general-form__head--phone">Контактная информация:</h2>
                 <label for="phone" class="tell-me-phone__labe">Контактный телефон<sup>*</sup>:</label>
                 <input class="general-form__number" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
                 <label for="mail" class="tell-me-phone__labe">Электронная почта<sup>*</sup>:</label>
@@ -75,7 +75,7 @@
                 <label class="general-form__radio-label" for="neutral">Затрудняюсь ответить</label>
               </div>
               <div class="general-form__section tell-me-places">
-                <h2 class="general-form__head">Посещенные достопримечательности:</h2>
+                <h2 class="general-form__head general-form__head--places">Посещенные достопримечательности:</h2>
                 <input type="checkbox" class="general-form__checkbox" id="bridge" name="bridge" checked>
                 <label class="general-form__check-label" for="bridge">Мост Дьявола</label>
                 <input type="checkbox" class="general-form__checkbox" id="bell" name="bell" checked>
@@ -115,16 +115,16 @@
           </div>
         </div>
       </footer>
-      <div class="modal form-success">
-        <h2 class="modal__head">Ваш отзыв отправлен!</h2>
-        <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button type="button" class="form-success__btn button">ОК</button>
-      </div>
-      <div class="modal form-error">
-        <h2 class="modal__head">Что-то пошло не так!</h2>
-        <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-        <button type="button" class="form-error__btn button">ОК</button>
-      </div>
+    </div>
+    <div class="modal form-success">
+      <h2 class="modal__head">Ваш отзыв отправлен!</h2>
+      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button type="button" class="form-success__btn button">ОК</button>
+    </div>
+    <div class="modal form-error">
+      <h2 class="modal__head">Что-то пошло не так!</h2>
+      <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <button type="button" class="form-error__btn button">ОК</button>
     </div>
   </body>
 </html>
