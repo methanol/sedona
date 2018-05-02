@@ -47,15 +47,25 @@
     padding-bottom: 15px;
   }
 
-  .hotel-part__info {
-    padding-bottom: 5px;
-  }
-
   .hotel-part__info,
   .hotel-part__hotel-searcher {
     width: 460px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 5px;
+  }
+
+  .hotel-part__info {
+    width: 445px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-part__info {
+    padding-bottom: 10px;
+  }
+
+  .hotel-part__wrap {
+    padding-bottom: 12px;
   }
 }

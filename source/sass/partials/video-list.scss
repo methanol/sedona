@@ -62,22 +62,23 @@
     margin: 0 auto;
     align-items: center;
     position: relative;
-    margin-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .video-part__head {
     font-size: 30px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0;
   }
 
   .video-part__info {
     width: 430px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
+    padding-top: 5px;
   }
 
   .video-part__film {
-    transform: none;
     width: 100%;
+    height: auto;
     min-height: 500px;
   }
 
@@ -85,7 +86,7 @@
     width: 100%;
     position: absolute;
     min-height: 93px;
-    bottom: 0;
+    bottom: 36px;
     left: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
@@ -105,5 +106,10 @@
 @media (min-width: $desktop-width) {
   .video-part__wrap {
     max-width: 800px;
+    padding-bottom: 80px;
+  }
+
+  .video-part__control {
+    bottom: 85px;
   }
 }

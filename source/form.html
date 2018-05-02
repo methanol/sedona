@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SEDONA: Form Page</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -26,7 +27,13 @@
               </li>
             </ul>
           </nav>
-          <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="100" height="80"></a>
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="104" height="84">
+            </picture>
+          </a>
         </div>
       </header>
       <main class="page-main">
@@ -66,7 +73,7 @@
                 <input class="general-form__number general-form__number--mail" type="email" id="mail" name="mail" required placeholder="Введите e-mail">
               </div>
               <div class="general-form__section tell-me-feel">
-                <h2 class="general-form__head">Ваше общее впечатление:</h2>
+                <h2 class="general-form__head general-form__head--feel">Ваше общее впечатление:</h2>
                 <input class="general-form__radio good-feel" type="radio" id="good" name="feel" checked>
                 <label class="general-form__radio-label" for="good">Скорее положительное</label>
                 <input class="general-form__radio bad-feel" type="radio" id="bad" name="feel">
@@ -76,14 +83,16 @@
               </div>
               <div class="general-form__section tell-me-places">
                 <h2 class="general-form__head general-form__head--places">Посещенные достопримечательности:</h2>
-                <input type="checkbox" class="general-form__checkbox" id="bridge" name="bridge" checked>
-                <label class="general-form__check-label" for="bridge">Мост Дьявола</label>
-                <input type="checkbox" class="general-form__checkbox" id="bell" name="bell" checked>
-                <label class="general-form__check-label" for="bell">Гора-Колокол</label>
-                <input type="checkbox" class="general-form__checkbox" id="park" name="park" checked>
-                <label class="general-form__check-label" for="park">Слайд-парк</label>
-                <input type="checkbox" class="general-form__checkbox" id="rock" name="rock">
-                <label class="general-form__check-label" for="rock">Красные скалы</label>
+                <div class="tell-me-places__squad">
+                  <input type="checkbox" class="general-form__checkbox" id="bridge" name="bridge" checked>
+                  <label class="general-form__check-label" for="bridge">Мост Дьявола</label>
+                  <input type="checkbox" class="general-form__checkbox" id="bell" name="bell" checked>
+                  <label class="general-form__check-label" for="bell">Гора-Колокол</label>
+                  <input type="checkbox" class="general-form__checkbox" id="park" name="park" checked>
+                  <label class="general-form__check-label" for="park">Слайд-парк</label>
+                  <input type="checkbox" class="general-form__checkbox" id="rock" name="rock">
+                  <label class="general-form__check-label" for="rock">Красные скалы</label>
+                </div>
               </div>
               <div class="general-form__section tell-me-emo">
                 <h2 class="general-form__head">Опишите свои эмоции:</h2>

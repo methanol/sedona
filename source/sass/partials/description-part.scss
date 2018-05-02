@@ -46,7 +46,7 @@
   margin: 0;
   padding: 0;
   margin-top: 40px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 
   &--form {
     margin-top: 37px;
@@ -67,12 +67,16 @@
 
 @media (min-width: $tablet-width) {
   .description-part__wrap {
-    &--main::before {
-      display: none;
-    }
+    &--main {
+      margin-bottom: 35px;
 
-    &--main::after {
-      display: none;
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
     }
 
     &--photo {
@@ -117,7 +121,13 @@
 @media (min-width: $desktop-width) {
   .description-part__wrap {
     &--photo {
-      padding-top: 70px;
+      padding-top: 60px;
+    }
+  }
+
+  .description-part__head {
+    &--form {
+      margin-top: 110px;
     }
   }
 }

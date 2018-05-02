@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SEDONA: Main Page</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -26,7 +27,13 @@
               </li>
             </ul>
           </nav>
-          <a class="page-header__logo" href="#"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="100" height="80"></a>
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="104" height="84">
+            </picture>
+          </a>
         </div>
       </header>
       <main class="page-main">
@@ -37,17 +44,21 @@
         </section>
         <section class="description-part">
           <div class="description-part__wrap description-part__wrap--main">
-            <h2 class="description-part__head">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <h2 class="description-part__head">Седона &#8211; небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="description-part__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
         </section>
         <section class="reason-part reason-part--plus-view">
           <div class="reason-part__wrap reason-part__wrap--plus-view">
             <h2 class="reason-part__head">Настоящий городок</h2>
-            <p class="reason-part__order">- № 1 -</p>
+            <p class="reason-part__order">&#8211; № 1 &#8211;</p>
             <p class="reason-part__details">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/main-city-mobile@1x.jpg" class="reason__image" width="320" height="260" alt="первая причина">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+            <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" class="reason__image" width="320" height="256" alt="первая причина">
+          </picture>
         </section>
         <section class="advantages-part">
           <div class="advantages-part__wrap">
@@ -57,49 +68,53 @@
             </div>
             <div class="advantage-part advantage-part--cards">
               <h2 class="advantage-part__head">Сувениры</h2>
-              <p class="advantage-part__info">Не только китайского, но и местного производства!</p>
+              <p class="advantage-part__info">Не только китайского,<br> но и местного производства!</p>
             </div>
             <div class="advantage-part advantage-part--food">
               <h2 class="advantage-part__head">Еда</h2>
-              <p class="advantage-part__info">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantage-part__info">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
             </div>
           </div>
         </section>
         <section class="reason-part reason-part--plus-view reason-part--rev">
           <div class="reason-part__wrap reason-part__wrap--plus-view">
-            <h2 class="reason-part__head">Там есть мост дьявола</h2>
-            <p class="reason-part__order">- № 2 -</p>
-            <p class="reason-part__details">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <h2 class="reason-part__head">Там есть мост&nbsp;дьявола</h2>
+            <p class="reason-part__order">&#8211; № 2 &#8211;</p>
+            <p class="reason-part__details">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
           </div>
-          <img src="img/main-bridge-mobile@1x.jpg" class="reason__image" width="320" height="260" alt="вторая причина">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" class="reason__image" width="320" height="256" alt="вторая причина">
+          </picture>
         </section>
         <div class="reason-squad">
           <section class="reason-part reason-part--no-view">
             <div class="reason-part__wrap reason-part__wrap--no-view">
               <h2 class="reason-part__head ">Небольшая площадь</h2>
-              <p class="reason-part__order">- № 3 -</p>
+              <p class="reason-part__order">&#8211; № 3 &#8211;</p>
               <p class="reason-part__details">Все интересные места находятся очень близко</p>
             </div>
           </section>
           <section class="reason-part reason-part--no-view">
             <div class="reason-part__wrap reason-part__wrap--no-view">
               <h2 class="reason-part__head">Красивая дорога</h2>
-              <p class="reason-part__order">- № 4 -</p>
-              <p class="reason-part__details">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="reason-part__order">&#8211; № 4 &#8211;</p>
+              <p class="reason-part__details">Ехать в Седону из Лас&nbsp;-&nbsp;Вегаса совсем не&nbsp;скучно!</p>
             </div>
           </section>
           <section class="reason-part reason-part--no-view">
             <div class="reason-part__wrap reason-part__wrap--no-view">
               <h2 class="reason-part__head">Мало туристов</h2>
-              <p class="reason-part__order">- № 5 -</p>
-              <p class="reason-part__details">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="reason-part__order">&#8211; № 5 &#8211;</p>
+              <p class="reason-part__details">Большинство едет в Гранд&nbsp;Каньон и толпится там</p>
             </div>
           </section>
         </div>
         <section class="hotel-part">
           <div class="hotel-part__wrap">
             <h2 class="hotel-part__head">Заинтересовались?</h2>
-            <p class="hotel-part__info">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="hotel-part__info">Укажите предпологаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
             <a href="#" class="hotel-part__hotel-searcher button">Найти гостиницу</a>
           </div>
         </section>

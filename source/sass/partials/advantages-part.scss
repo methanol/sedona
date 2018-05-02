@@ -75,6 +75,10 @@
   line-height: 22px;
 }
 
+.advantage-part__info br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages-part__wrap {
     flex-direction: row;
@@ -102,7 +106,8 @@
         position: absolute;
         content: "";
         top: 18%;
-        left: 35%;
+        left: 50%;
+        margin-left: -37px;
         width: 75px;
         height: 75px;
         background-image: url("./../img/icon-house.svg");
@@ -119,7 +124,8 @@
         position: absolute;
         content: "";
         top: 18%;
-        left: 35%;
+        left: 50%;
+        margin-left: -37px;
         width: 75px;
         height: 75px;
         background-image: url("./../img/icon-gift.svg");
@@ -136,7 +142,8 @@
         position: absolute;
         content: "";
         top: 18%;
-        left: 35%;
+        left: 50%;
+        margin-left: -37px;
         width: 75px;
         height: 75px;
         background-image: url("./../img/icon-burger.svg");
@@ -155,5 +162,15 @@
   .advantage-part__info {
     width: 165px;
     padding-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-part__info {
+    width: 295px;
+  }
+
+  .advantage-part__info br {
+    display: block;
   }
 }

@@ -146,6 +146,7 @@
   background-color: rgb(242, 242, 242);
   width: 56px;
   height: 56px;
+  border-radius: 10%;
 }
 
 .general-form__checkbox:checked + .general-form__check-label::after {
@@ -170,7 +171,7 @@
 
 .general-form__send {
   margin-top: 42px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   min-height: 58px;
   display: flex;
   flex-direction: column;
@@ -202,6 +203,11 @@
     letter-spacing: 0.5px;
     margin-top: 57px;
     margin-bottom: 58px;
+
+    &--phone {
+      align-self: center;
+      margin-bottom: 22px;
+    }
   }
 
   .tell-me-feel {
@@ -248,10 +254,6 @@
     margin-top: -25px;
   }
 
-  .general-form__head--phone {
-    margin-bottom: 22px;
-  }
-
   .general-form__number {
     align-self: stretch;
     margin-bottom: 20px;
@@ -261,17 +263,23 @@
     order: -7;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: -45px;
   }
 
+  .tell-me-places__squad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 95px;
+  }
+
   .general-form__head--places {
-    width: 100%;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
-    align-self: center;
-    flex-grow: 1;
+    margin-bottom: 42px;
   }
 
   .general-form__radio-label {
@@ -280,8 +288,12 @@
   }
 
   .general-form__check-label {
-    padding-bottom: 30px;
-    width: 220px;
+    padding-bottom: 25px;
+    width: 150px;
+  }
+
+  .general-form__check-label:nth-of-type(2n) {
+    margin-left: 35px;
   }
 
   .tell-me-emo {
@@ -314,18 +326,59 @@
     box-sizing: border-box;
   }
 
+  .general-form__head {
+    margin-top: 43px;
+
+    &--feel {
+      margin-left: 80px;
+    }
+  }
+
+  .tell-me-name {
+    padding-left: 80px;
+  }
+
   .tell-me-phone {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .general-form__number {
+  .general-form__head--phone {
+    width: 100%;
+    text-align: center;
     flex-grow: 1;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-top: 55px;
+    margin-bottom: 71px;
+  }
+
+  .tell-me-phone__labe {
+    align-self: center;
   }
 
   .general-form__check-label {
-    width: 140px;
+    width: 120px;
+    margin: 0;
+  }
+
+  .general-form__check-label:nth-of-type(2n) {
+    margin-left: 0;
+  }
+
+  .general-form__head--places {
+    margin-top: 60px;
+  }
+
+  .tell-me-places__squad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .general-form__send {
+    width: 480px;
+    margin-bottom: 65px;
   }
 }
