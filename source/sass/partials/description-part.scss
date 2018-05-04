@@ -11,28 +11,9 @@
   margin-bottom: 31px;
   position: relative;
 
-  &--main::before {
-    position: absolute;
-    content: "";
-    border: 15px solid transparent;
-    border-bottom-color: rgb(129, 179, 210);
-    right: 205px;
-    bottom: -53px;
-    transform: rotate(267deg) scaleY(14.3) skewY(0.3deg);
-  }
-
-  &--main::after {
-    position: absolute;
-    content: "";
-    border: 15px solid transparent;
-    border-bottom-color: rgb(129, 179, 210);
-    left: 205px;
-    bottom: -53px;
-    transform: rotate(93deg) scaleY(14.3) skewY(-0.2deg);
-  }
-
   &--photo {
     margin: 0 auto;
+    margin-bottom: 3px;
   }
 
   &--form {
@@ -62,6 +43,10 @@
 
   &--form {
     line-height: 24px;
+  }
+
+  &--photo {
+    margin-top: 24px;
   }
 }
 
@@ -109,7 +94,7 @@
 
     &--photo {
       width: 450px;
-      margin-bottom: 68px;
+      margin-bottom: 65px;
     }
 
     &--form {
@@ -127,7 +112,7 @@
 
   .description-part__head {
     &--form {
-      margin-top: 110px;
+      margin-top: 113px;
     }
   }
 }

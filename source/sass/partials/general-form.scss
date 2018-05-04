@@ -171,7 +171,7 @@
 
 .general-form__send {
   margin-top: 42px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   min-height: 58px;
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@
   .general-form__head {
     font-size: 20px;
     padding: 0;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     margin-top: 57px;
     margin-bottom: 58px;
 
@@ -227,9 +227,20 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding-left: 55px;
+    padding-left: 58px;
     box-sizing: border-box;
     justify-content: flex-start;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 295px;
+      background-color: rgb(219, 219, 219);
+      top: 60px;
+      left: 0;
+    }
   }
 
   .tell-me-name__key-field {
@@ -252,11 +263,63 @@
     align-items: flex-start;
     text-align: center;
     margin-top: -25px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgb(219, 219, 219);
+      top: 68px;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgb(219, 219, 219);
+      top: 68px;
+      right: 0;
+    }
   }
 
   .general-form__number {
     align-self: stretch;
     margin-bottom: 20px;
+    position: relative;
+  }
+
+  .tell-me-phone__labe {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      content: "";
+      top: 36px;
+      left: 590px;
+      background: url(".././img/icon-phone.svg") no-repeat center;
+      z-index: 10;
+    }
+
+    &--mail {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        content: "";
+        top: 36px;
+        left: 590px;
+        background: url(".././img/icon-mail.svg") no-repeat center;
+        z-index: 10;
+      }
+    }
   }
 
   .tell-me-places {
@@ -265,7 +328,28 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: -45px;
+    margin-top: -50px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgb(219, 219, 219);
+      top: 85px;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgb(219, 219, 219);
+      top: 85px;
+      right: 0;
+    }
   }
 
   .tell-me-places__squad {
@@ -273,18 +357,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 95px;
+    margin-bottom: 5px;
   }
 
   .general-form__head--places {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 
   .general-form__radio-label {
     padding-bottom: 20px;
     width: 260px;
+    padding-left: 75px;
   }
 
   .general-form__check-label {
@@ -301,17 +387,40 @@
     width: 100%;
     margin-top: -25px;
     margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgb(219, 219, 219);
+      top: 67px;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgb(219, 219, 219);
+      top: 67px;
+      right: 0;
+    }
   }
 
   .general-form__send {
     width: 324px;
+    margin-bottom: 60px;
+    font-size: 18px;
 
     &::after {
-      content: "* - Обязательные поля";
+      content: "*  -  Обязательные поля";
       position: absolute;
-      font-size: 14px;
-      bottom: 60px;
-      right: 0;
+      font-size: 12px;
+      bottom: 75px;
+      right: -17px;
       width: 185px;
       height: 30px;
       color: black;
@@ -327,11 +436,15 @@
   }
 
   .general-form__head {
-    margin-top: 43px;
+    margin-top: 40px;
 
     &--feel {
       margin-left: 80px;
     }
+  }
+
+  .general-form__radio-label {
+    padding-left: 80px;
   }
 
   .tell-me-name {
@@ -341,23 +454,82 @@
   .tell-me-phone {
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::before {
+      width: 280px;
+      top: 65px;
+    }
+
+    &::after {
+      width: 280px;
+      top: 65px;
+    }
   }
 
   .general-form__head--phone {
     width: 100%;
     text-align: center;
     flex-grow: 1;
-    margin-top: 55px;
-    margin-bottom: 71px;
+    margin-top: 53px;
+    margin-bottom: 68px;
   }
 
   .tell-me-phone__labe {
     align-self: center;
+    padding: 0;
+    margin: 0;
+    margin-top: -18px;
+    padding-right: 17px;
+
+    &::after {
+      top: -12px;
+      left: 343px;
+    }
+
+    &--mail {
+      &::after {
+        top: -12px;
+        left: 420px;
+      }
+    }
+  }
+
+  .tell-me-phone__labe span {
+    display: none;
+  }
+
+  .general-form__number {
+    margin-bottom: 23px;
+    margin-top: 5px;
+    margin-right: 80px;
+
+    &--mail {
+      margin-right: 0;
+    }
+  }
+
+  .tell-me-places {
+    &::before {
+      width: 280px;
+      top: 85px;
+    }
+
+    &::after {
+      width: 280px;
+      top: 85px;
+    }
   }
 
   .general-form__check-label {
-    width: 120px;
+    width: 125px;
     margin: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    &:first-of-type {
+      width: 130px;
+      margin: 0;
+    }
   }
 
   .general-form__check-label:nth-of-type(2n) {
@@ -366,6 +538,7 @@
 
   .general-form__head--places {
     margin-top: 60px;
+    margin-bottom: 40px;
   }
 
   .tell-me-places__squad {
@@ -375,6 +548,22 @@
     margin: 0;
     justify-content: space-between;
     margin-bottom: 10px;
+  }
+
+  .tell-me-emo {
+    margin-top: -17px;
+
+    &::before {
+      width: 280px;
+      top: 51px;
+      left: 0;
+    }
+
+    &::after {
+      width: 280px;
+      top: 51px;
+      right: 0;
+    }
   }
 
   .general-form__send {

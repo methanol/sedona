@@ -19,26 +19,6 @@
   &--short {
     min-height: 158px;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    border: 15px solid transparent;
-    border-bottom-color: white;
-    right: 160px;
-    bottom: -17px;
-    transform: rotate(266deg) scaleY(11.4) skewY(0.3deg);
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    border: 15px solid transparent;
-    border-bottom-color: white;
-    left: 160px;
-    bottom: -17px;
-    transform: rotate(94deg) scaleY(11.4) skewY(-0.5deg);
-  }
 }
 
 .welcome-part__text {
@@ -62,26 +42,6 @@
     width: 100%;
     min-height: 518px;
     position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      border: 35px solid transparent;
-      border-bottom-color: white;
-      right: 52%;
-      bottom: -40px;
-      transform: rotate(266deg) scaleY(11.4) skewY(0.4deg);
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      border: 35px solid transparent;
-      border-bottom-color: white;
-      left: 52%;
-      bottom: -40px;
-      transform: rotate(94deg) scaleY(11.4) skewY(-0.4deg);
-    }
 
     &--short {
       min-height: 290px;
