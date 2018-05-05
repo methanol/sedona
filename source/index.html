@@ -10,22 +10,24 @@
     <div class="page-wrap">
       <header class="page-header">
         <div class="container page-header__wrap">
-          <nav class="main-nav">
-            <button class="main-nav__toggle text-hidden" type="button">Развернуть меню</button>
-            <ul class="main-nav__list nav-group">
-              <li class="nav-group__item nav-group__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="nav-group__item nav-group__item--right">
-                <a href="photo.html">Фото и видео</a>
-              </li>
-              <li class="nav-group__item">
-                <a href="form.html">Форма отзыва</a>
-              </li>
-              <li class="nav-group__item">
-                <a href="https://up.htmlacademy.ru">HTML Academy</a>
-              </li>
-            </ul>
+          <nav class="main-nav main-nav--open main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Развернуть меню</button>
+            <div class="main-naw__wrap">
+              <ul class="main-nav__list nav-group">
+                <li class="nav-group__item nav-group__item--active">
+                  <a>Главная</a>
+                </li>
+                <li class="nav-group__item nav-group__item--right">
+                  <a href="photo.html">Фото и видео</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="form.html">Форма отзыва</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="https://up.htmlacademy.ru">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <a class="page-header__logo" href="#">
             <picture>
@@ -149,5 +151,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/nav-hiding.js"></script>
   </body>
 </html>
