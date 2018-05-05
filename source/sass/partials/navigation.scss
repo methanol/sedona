@@ -2,36 +2,36 @@
   position: relative;
 }
 
+.main-nav--close .main-nav__toggle {
+  position: absolute;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  right: 23px;
+  top: 18px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  outline: none;
+  background-color: inherit;
+}
+
 .main-nav--open .main-nav__toggle {
   position: absolute;
   font-size: 0;
   width: 25px;
   height: 25px;
-  background-image: url(".././img/icon-cross.svg");
-  background-color: inherit;
-  background-repeat: no-repeat;
-  right: 10px;
+  right: 20px;
   top: 18px;
   border: none;
   cursor: pointer;
   z-index: 2;
   outline: none;
+  background-color: inherit;
 }
 
-.main-nav--close .main-nav__toggle {
-  position: absolute;
-  font-size: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url(".././img/icon-menu.svg");
-  background-color: inherit;
-  background-repeat: no-repeat;
-  right: 10px;
-  top: 18px;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-  outline: none;
+.main-nav__toggle-open {
+  display: none;
 }
 
 .main-nav__list {
@@ -42,15 +42,11 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--close {
-    background-color: white;
-  }
-
-  .main-nav--close .main-nav__list {
+  .main-nav--open .main-nav__list {
     display: none;
   }
 
-  .main-nav--close + .page-header__logo {
+  .main-nav--open + .page-header__logo {
     top: 0;
   }
 
