@@ -23,6 +23,8 @@
   font-weight: 400;
   width: 270px;
   margin-top: 26px;
+  line-height: 24px;
+  padding-bottom: 5px;
 }
 
 .video-part__film {
@@ -126,7 +128,7 @@
     width: 100%;
     position: absolute;
     min-height: 92px;
-    bottom: 40px;
+    bottom: 38px;
     left: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
@@ -179,6 +181,7 @@
   .video-part__wrap {
     max-width: 800px;
     padding-bottom: 75px;
+    padding-top: 35px;
   }
 
   .video-part__control {

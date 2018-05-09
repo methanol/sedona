@@ -8,7 +8,7 @@
   margin: 0 auto;
   min-height: 186px;
   justify-content: space-between;
-  padding-top: 33px;
+  padding-top: 36px;
   padding-bottom: 20px;
 }
 
@@ -28,7 +28,7 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    min-height: 122px;
+    min-height: 128px;
     flex-wrap: wrap;
     width: 100%;
     padding: 0;
@@ -41,6 +41,10 @@
     flex-grow: 1;
     flex-wrap: wrap;
   }
+
+  .page-footer__copyright {
+    transform: translateX(6px);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -49,7 +53,15 @@
     margin: 0 auto;
   }
 
+  .page-footer__wrap {
+    min-height: 120px;
+  }
+
   .page-footer__hash {
     transform: translateX(-13px);
+  }
+
+  .page-footer__copyright {
+    transform: translateX(18px);
   }
 }

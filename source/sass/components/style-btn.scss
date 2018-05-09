@@ -3,14 +3,14 @@
   align-self: stretch;
   color: white;
   line-height: 40px;
-  font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .button {
-    font-size: 18px;
+    font-size: 21px;
     align-self: center;
   }
 }

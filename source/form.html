@@ -126,7 +126,7 @@
                   <input type="checkbox" class="general-form__checkbox" id="bridge" name="bridge" checked>
                   <label class="general-form__check-label" for="bridge">Мост Дьявола</label>
                   <input type="checkbox" class="general-form__checkbox" id="bell" name="bell" checked>
-                  <label class="general-form__check-label" for="bell">Гора-Колокол</label>
+                  <label class="general-form__check-label general-form__check-label--bell" for="bell">Гора-Колокол</label>
                   <input type="checkbox" class="general-form__checkbox" id="park" name="park" checked>
                   <label class="general-form__check-label" for="park">Слайд-парк</label>
                   <input type="checkbox" class="general-form__checkbox" id="rock" name="rock">
@@ -166,8 +166,10 @@
     </div>
     <div class="modal form-success">
       <h2 class="modal__head">Ваш отзыв отправлен!</h2>
-      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button type="button" class="form-success__btn button">ОК</button>
+      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <div class="form-success__btn-back">
+        <button type="button" class="form-success__btn button">закрыть окно</button>
+      </div>
     </div>
     <div class="modal form-error">
       <h2 class="modal__head">Что-то пошло не так!</h2>
@@ -175,5 +177,6 @@
       <button type="button" class="form-error__btn button">ОК</button>
     </div>
     <script src="js/nav-hiding.js"></script>
+    <script src="js/validating.js"></script>
   </body>
 </html>

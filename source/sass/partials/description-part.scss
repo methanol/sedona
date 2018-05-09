@@ -47,6 +47,20 @@
 
   &--photo {
     margin-top: 24px;
+    letter-spacing: 0;
+    position: relative;
+    line-height: 24px;
+    padding-bottom: 5px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: rgb(103, 143, 168);
+      bottom: -23px;
+      left: -20px;
+    }
   }
 }
 
@@ -94,8 +108,13 @@
 
     &--photo {
       width: 450px;
-      margin-bottom: 65px;
-    }
+      margin-bottom: 63px;
+      position: relative;
+
+      &::after {
+        display: none;
+        }
+      }
 
     &--form {
       width: 450px;
@@ -113,6 +132,13 @@
   .description-part__head {
     &--form {
       margin-top: 113px;
+    }
+  }
+
+  .description-part__reasons {
+
+    &--photo {
+      margin-top: 31px;
     }
   }
 }
