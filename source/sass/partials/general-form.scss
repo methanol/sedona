@@ -76,6 +76,33 @@
   align-self: flex-start;
   margin-top: -3px;
   margin-bottom: 7px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    content: "";
+    top: 38px;
+    left: 222px;
+    background: url(".././img/icon-phone.svg") no-repeat center;
+    z-index: 10;
+  }
+
+  &--mail {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      content: "";
+      top: 38px;
+      left: 222px;
+      background: url(".././img/icon-mail.svg") no-repeat center;
+      z-index: 10;
+    }
+  }
 }
 
 .tell-me-feel {
@@ -179,36 +206,6 @@
   align-items: center;
   letter-spacing: 0.2px;
   font-size: 18px;
-}
-
-.tell-me-phone__labe {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    width: 58px;
-    height: 58px;
-    content: "";
-    top: 38px;
-    left: 222px;
-    background: url(".././img/icon-phone.svg") no-repeat center;
-    z-index: 10;
-  }
-
-  &--mail {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      width: 58px;
-      height: 58px;
-      content: "";
-      top: 38px;
-      left: 222px;
-      background: url(".././img/icon-mail.svg") no-repeat center;
-      z-index: 10;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -557,6 +554,7 @@
     margin: 0;
     flex-grow: 0;
     flex-shrink: 1;
+    padding-left: 80px;
 
     &:first-of-type {
       width: 130px;
@@ -573,10 +571,6 @@
   }
 
   .general-form__check-label:nth-of-type(4n) {
-    padding-left: 80px;
-  }
-
-  .general-form__check-label {
     padding-left: 80px;
   }
 
