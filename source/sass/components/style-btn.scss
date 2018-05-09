@@ -6,6 +6,20 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgb(102, 158, 192);
+  }
+
+  &:active {
+    background-color: rgb(84, 150, 189);
+    color: rgb(136, 182, 209);
+  }
+
+  &:disabled {
+    background-color: rgb(229, 229, 229);
+    color: white;
+  }
 }
 
 @media (min-width: $tablet-width) {

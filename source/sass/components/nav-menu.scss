@@ -46,4 +46,16 @@
       margin-right: auto;
     }
   }
+
+  .nav-group__item a[href] {
+    &:hover {
+      color: rgb(205, 225, 237);
+      background-color: white;
+    }
+
+    &:active {
+      background-color: white;
+      color: rgb(199, 199, 199);
+    }
+  }
 }
