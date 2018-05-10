@@ -3,11 +3,29 @@
   align-self: stretch;
   color: white;
   line-height: 40px;
-  font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: rgb(102, 158, 192);
+  }
+
+  &:active {
+    background-color: rgb(84, 150, 189);
+    color: rgb(136, 182, 209);
+  }
+
+  &:disabled {
+    background-color: rgb(229, 229, 229);
+    color: white;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  align-self: center;
+  .button {
+    font-size: 21px;
+    align-self: center;
+  }
 }
