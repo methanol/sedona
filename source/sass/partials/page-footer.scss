@@ -38,12 +38,8 @@
   .page-footer__hash,
   .page-footer__copyright {
     width: 33.33333%;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-wrap: wrap;
-  }
-
-  .page-footer__copyright {
-    transform: translateX(6px);
   }
 }
 
@@ -55,13 +51,5 @@
 
   .page-footer__wrap {
     min-height: 120px;
-  }
-
-  .page-footer__hash {
-    transform: translateX(-13px);
-  }
-
-  .page-footer__copyright {
-    transform: translateX(18px);
   }
 }

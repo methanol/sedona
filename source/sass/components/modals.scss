@@ -8,9 +8,9 @@
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   position: fixed;
   z-index: 20;
-  bottom: 50px;
+  top: 50%;
   left: 50%;
-  margin-left: -160px;
+  transform: translate(-50%, -50%);
   display: none;
   padding: 0;
   justify-content: space-between;
@@ -18,7 +18,6 @@
 
 .form-error {
   min-height: 280px;
-  bottom: 400px;
 }
 
 .form-error__btn {
@@ -72,8 +71,6 @@
   .form-success {
     width: 645px;
     min-height: 350px;
-    bottom: 360px;
-    margin-left: -322px;
   }
 
   .modal__head {
@@ -94,8 +91,6 @@
   .form-error {
     width: 400px;
     min-height: 345px;
-    bottom: 200px;
-    margin-left: -200px;
   }
 
   .form-error__btn {
@@ -112,11 +107,5 @@
 
   .form-success__btn-back {
     height: 146px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-error {
-    bottom: 90px;
   }
 }
