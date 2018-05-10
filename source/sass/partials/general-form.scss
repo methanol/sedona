@@ -67,6 +67,16 @@
   border: none;
 }
 
+.general-form__name:hover,
+.general-form__number:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.general-form__name:focus,
+.general-form__number:focus {
+  background-color: white;
+}
+
 .tell-me-phone {
   padding-bottom: 19px;
 }
@@ -87,6 +97,17 @@
     left: 222px;
     background: url(".././img/icon-phone.svg") no-repeat center;
     z-index: 10;
+  }
+
+  &::before {
+    position: absolute;
+    width: 58px;
+    height: 60px;
+    content: "";
+    top: 38px;
+    left: 222px;
+    background: rgb(230, 230, 230);
+    z-index: 9;
   }
 
   &--mail {
@@ -176,6 +197,20 @@
   border-radius: 10%;
 }
 
+.general-form__radio-label:hover::before,
+.general-form__check-label:hover::before {
+  background-color: rgb(229, 229, 229);
+}
+
+.general-form__radio-label:active::before,
+.general-form__check-label:active::before {
+  background-color: rgb(213, 213, 213);
+}
+
+.general-form__radio:checked:active + .general-form__radio-label::after {
+  background-color: rgb(164, 164, 164);
+}
+
 .general-form__checkbox:checked + .general-form__check-label::after {
   position: absolute;
   content: "";
@@ -184,6 +219,10 @@
   background: url("./../img/icon-tick.svg") no-repeat center;
   width: 26px;
   height: 20px;
+}
+
+.general-form__checkbox:checked:active + .general-form__check-label::after {
+  opacity: 0.5;
 }
 
 .general-form__textarea {
@@ -332,6 +371,11 @@
       left: 590px;
       background: url(".././img/icon-phone.svg") no-repeat center;
       z-index: 10;
+    }
+
+    &::before {
+      top: 38px;
+      left: 590px;
     }
 
     &--mail {
@@ -515,9 +559,18 @@
       left: 343px;
     }
 
+    &::before {
+      top: -14px;
+      left: 343px;
+    }
+
     &--mail {
       &::after {
         top: -12px;
+        left: 420px;
+      }
+
+      &::before {
         left: 420px;
       }
     }

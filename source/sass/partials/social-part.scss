@@ -12,6 +12,27 @@
   font-size: 0;
   position: relative;
   margin: 0 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(102, 158, 192);
+  }
+
+  &:active {
+    background-color: rgb(84, 150, 189);
+  }
+
+  &:active .social__link--twitter-ico {
+    fill: rgb(136, 182, 209);
+  }
+
+  &:active .social__link--facebook-ico {
+    fill: rgb(136, 182, 209);
+  }
+
+  &:active .social__link--youtube-ico {
+    fill: rgb(136, 182, 209);
+  }
 }
 
 .social__link--twitter-ico,
