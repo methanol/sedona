@@ -1,11 +1,15 @@
 .page-footer {
   width: 100%;
+  background-color: white;
 }
 
 .page-footer__wrap {
   @include flex-column;
   margin: 0 auto;
-  min-height: 243px;
+  min-height: 186px;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 20px;
 }
 
 .page-footer__hash {
@@ -24,15 +28,17 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    min-height: 122px;
-    flex-wrap: nowrap;
+    min-height: 128px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
   }
 
   .page-footer__social,
   .page-footer__hash,
   .page-footer__copyright {
     width: 33.33333%;
-    flex-shrink: 1;
+    flex-grow: 0;
     flex-wrap: wrap;
   }
 }
@@ -41,5 +47,9 @@
   .page-footer {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-footer__wrap {
+    min-height: 120px;
   }
 }
