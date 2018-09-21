@@ -35,11 +35,17 @@
   }
 
   .page-footer__social,
-  .page-footer__hash,
+  .page-footer__hash-wrap,
   .page-footer__copyright {
     width: 33.33333%;
     flex-grow: 0;
     flex-wrap: wrap;
+  }
+
+  .page-footer__hash-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -51,5 +57,9 @@
 
   .page-footer__wrap {
     min-height: 120px;
+  }
+
+  .page-footer__hash {
+    margin-right: 23px;
   }
 }

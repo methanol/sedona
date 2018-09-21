@@ -31,6 +31,23 @@
   }
 }
 
+.welcome-part__triangle-320 {
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.welcome-part__triangle-768 {
+  display: none;
+}
+
+.welcome-part__triangle-1200 {
+  display: none;
+}
+
 .welcome-part__text {
   margin-bottom: -5px;
 }
@@ -80,6 +97,23 @@
     margin-top: -20px;
     margin-right: -5px;
   }
+
+  .welcome-part__triangle-320 {
+    display: none;
+  }
+
+  .welcome-part__triangle-768 {
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
+  .welcome-part__triangle-1200 {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -105,5 +139,18 @@
       background: url(".././img/bg-back-desktop@2x.jpg") no-repeat center;
       background-position: bottom;
     }
+  }
+
+  .welcome-part__triangle-1200 {
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
+  .welcome-part__triangle-768 {
+    display: none;
   }
 }

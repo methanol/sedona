@@ -64,6 +64,13 @@
   }
 }
 
+.description-part__triangle-320 {
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+  z-index: 100;
+}
+
 @media (min-width: $tablet-width) {
   .description-part__wrap {
     &--main {
@@ -119,6 +126,10 @@
     &--form {
       width: 450px;
     }
+  }
+
+  .description-part__triangle-320 {
+    display: none;
   }
 }
 

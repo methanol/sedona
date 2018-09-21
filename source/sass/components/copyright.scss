@@ -28,10 +28,35 @@
   }
 }
 
+.copyright__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     flex-grow: 1;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .copyright__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__wrap {
+    margin-left: 40px;
   }
 }

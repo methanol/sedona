@@ -79,6 +79,24 @@
           <section class="welcome-part welcome-part--short">
             <div class="welcome-part__wrap welcome-part__wrap--short">
               <img class="welcome-part__text-short" src="img/text-sedona.svg" width="235" height="50" alt="Sedona">
+              <div class="welcome-part__triangle-320">
+                <svg width="320" height="200" fill="white">
+                  <polygon points="160,200 320,200, 320,173"/>
+                  <polygon points="0,200 160,200, 0,173"/>
+                </svg>
+              </div>
+              <div class="welcome-part__triangle-768">
+                <svg width="768" height="200" fill="white">
+                  <polygon points="384,200 734,142, 734,165 768,162, 768,200"/>
+                  <polygon points="384,200 35,142, 35,165 0,162, 0,200"/>
+                </svg>
+              </div>
+              <div class="welcome-part__triangle-1200">
+                <svg width="1200" height="200" fill="white">
+                  <polygon points="600,200 951,142, 951,165 1200,142 1200,200"/>
+                  <polygon points="600,200 249,142, 249,165 0,142, 0,200"/>
+                </svg>
+              </div>
             </div>
           </section>
           <section class="description-part">
@@ -143,8 +161,10 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrap">
-          <div class="page-footer__hash">
-            #VISITSEDONA
+          <div class="page-footer__hash-wrap">
+            <div class="page-footer__hash">
+              #VISITSEDONA
+            </div>
           </div>
           <ul class="page-footer__social social">
             <li class="social__item">
@@ -158,8 +178,10 @@
             </li>
           </ul>
           <div class="page-footer__copyright copyright">
+            <div class="copyright__wrap">
               <b class="copyright__text">Разработано</b>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="copyright__img" fill="black" width="40" height="40"><use xlink:href="#academy"></use></svg></a>
+            </div>
           </div>
         </div>
       </footer>
@@ -178,5 +200,6 @@
     </div>
     <script src="js/nav-hiding.js"></script>
     <script src="js/validating.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
